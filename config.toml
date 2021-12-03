@@ -1,0 +1,236 @@
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseurl                 = "https://hugo-future-imperfect-slim.netlify.app/"
+DefaultContentLanguage  = "en"
+title                   = "Hugo Future Imperfect Slim"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 3
+disqusShortname         = ""
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = []
+ignoreErrors = ["error-remote-getjson"]
+
+[markup.goldmark.renderer]
+  unsafe                = true
+
+[module]
+  [module.hugoVersion]
+  extended              = true
+  min                   = "0.62.0"
+
+[outputs]
+  home                  = ["html", "json", "rss"]
+
+[params]
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = ""
+  highlightjsLang       = []
+  viewMorePostsLink     = "blog"
+  readingTime           = true
+  imageStretch          = ""
+  removeBlur            = false
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+  hideEmptyStats        = false
+  toc                   = true
+  tocWords              = 400
+
+  [params.meta]
+    description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
+    author              = "HTML5UP and Hugo"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+  [params.header]
+    navbarTitle         = "Future Imperfect"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+
+  [params.intro]
+    header                = "Hugo Future Imperfect Slim"
+    paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
+    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+
+    [params.intro.pic]
+      src                 = "img/main/logo.jpg"
+      shape               = "circle"
+      width               = ""
+      alt                 = "Hugo Future Imperfect Slim"
+
+  [params.sidebar]
+    about               = "This theme was developed for Hugo static site generator."
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+  [params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+  [params.utterances]
+    enabled             = false
+    repo                = ""
+    issueTerm           = "pathname"
+    issueNumber         = ""
+    label               = ""
+    theme               = "github-light"
+
+  [params.staticman]
+    enabled             = true
+    api                 = ""  # No Trailing Slash
+    gitProvider         = ""
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = ""
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    identifier        = "about"
+    url               = "about"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    identifier        = "blog"
+    url               = "blog"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "categories"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "Contact"
+    identifier        = "contact"
+    url               = "contact"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 6
+
+[Languages]
+
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+  [Languages.zh-CN]
+    LanguageCode        = "zh-CN"
+    LanguageName        = "中文 (简体)"
+    title               = "失败乃成功之母"
+    description         = "中文 (简体) 描述"
+    weight              = 2
+
+    [[Languages.zh-CN.menu.main]]
+      name              = "主页"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.zh-CN.menu.main]]
+      name              = "关于"
+      identifier        = "about"
+      url               = "about"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.zh-CN.menu.main]]
+      name              = "博客"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.zh-CN.menu.main]]
+      name              = "类别"
+      identifier        = "categories"
+      url               = "categories"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.zh-CN.menu.main]]
+      name              = "联系方式"
+      identifier        = "contact"
+      url               = "contact"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+
+[social]
+  # Coding Communities
+  github                = "pacollins/hugo-future-imperfect-slim"
+#   gitlab                = ""
+#   stackoverflow         = "" # User Number
+#   bitbucket             = ""
+#   jsfiddle              = ""
+#   codepen               = ""
+  # Visual Art Communities
+#   deviantart            = ""
+#   flickr                = "example"
+#   behance               = ""
+#   dribbble              = ""
+  # Publishing Communities
+#   wordpress             = ""
+#   medium                = ""
+  # Professional/Business Oriented Communities
+#   linkedin              = "example"
+#   linkedin_company      = "examplebusiness"
+#   foursquare            = ""
+#   xing                  = ""
+#   slideshare            = ""
+  # Social Networks
+#   facebook              = "example"
+#   googleplus            = ""
+#   reddit                = "example"
+#   quora                 = ""
+#   youtube               = ""
+#   vimeo                 = ""
+#   whatsapp              = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    # wechat              = ""
+    qq                  = "1017241746" # User ID Number
+#   instagram             = "example"
+#   tumblr                = ""
+#   twitter               = "example"
+#   strava                = ""
+#   skype                 = ""
+#   snapchat              = ""
+#   pinterest             = "example"
+#   telegram              = "example"
+#   vine                  = ""
+  googlescholar         = "quancs"
+#   orcid                 = ""
+#   researchgate          = "example"
+#   keybase               = "example"
+#   mastodon              = "example.com/@example"
+  # Email
+  email                 = "quancs@qq.com"
