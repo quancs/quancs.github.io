@@ -1,0 +1,420 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<title>Guide de syntaxe de Markdown - 失败乃成功之母</title>
+<meta name=description content="Exemple d'article présentant la syntaxe et le formatage de base de Markdown pour les éléments HTML.">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=twitter:card content="summary_large_image">
+<meta property="og:site_name" content="失败乃成功之母">
+<meta property="og:title" content="Guide de syntaxe de Markdown">
+<meta property="og:description" content="Exemple d'article présentant la syntaxe et le formatage de base de Markdown pour les éléments HTML.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hugo-future-imperfect-slim.netlify.app/zh-cn/blog/markdown-syntax/">
+<meta property="og:image" content="https://hugo-future-imperfect-slim.netlify.app/img/2019/03/pic01.jpg">
+<meta property="og:image:alt" content="Mountain Range Through Clouds">
+<meta property="og:image" content="https://hugo-future-imperfect-slim.netlify.app/img/2019/03/pic02.jpg">
+<meta property="og:image:alt" content="Desert Scene">
+<meta property="og:image" content="https://hugo-future-imperfect-slim.netlify.app/img/2019/03/pic03.jpg">
+<meta property="og:image:alt" content="Valley">
+<link rel="shortcut icon" href="/favicon.ico?v=1">
+<meta name=generator content="Hugo 0.89.4">
+<link rel=stylesheet href=/css/bundle.min.6ad9eb85bff384c75937a02036b01425a2ca63f19a96535b8ba5b181db62a4b3.css integrity="sha256-atnrhb/zhMdZN6AgNrAUJaLKY/GallNbi6WxgdtipLM="><link rel=stylesheet href=/css/add-on.css>
+</head>
+<body>
+<header id=site-header>
+<nav id=site-nav>
+<h1 class=nav-title>
+<a href=/zh-cn/ class=nav>
+博客
+</a>
+</h1>
+<menu id=site-nav-menu class="flyout-menu menu">
+<a href=/zh-cn/ class="nav link"><i class="fas fa-home"></i> 主页</a>
+<a href=/zh-cn/about class="nav link"><i class="far fa-id-card"></i> 关于</a>
+<a href=/zh-cn/blog class="nav link"><i class="far fa-newspaper"></i> 博客</a>
+<a href=/zh-cn/categories class="nav link"><i class="fas fa-sitemap"></i> 类别</a>
+<a href=/zh-cn/contact class="nav link"><i class="far fa-envelope"></i> 联系方式</a>
+<a href=#share-menu class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href=#search-input class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+</menu>
+<a href=#search-input class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href=#share-menu class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href=#lang-menu class="nav lang-toggle" lang=zh-cn>zh-cn</a>
+<a href=#site-nav class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id=search class=menu><input id=search-input class="search-input menu"></input><div id=search-results class="search-results menu"></div></menu>
+<menu id=lang-menu class="flyout-menu menu">
+<a href=# lang=zh-cn class="nav link active">中文 (简体) (zh-cn)</a>
+<a href=https://hugo-future-imperfect-slim.netlify.app/blog/markdown-syntax/ lang=en class="nav link">English (en)</a>
+</menu>
+<menu id=share-menu class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Guide%20de%20syntaxe%20de%20Markdown&url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f" target=_blank rel=noopener class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f" target=_blank rel=noopener class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f&title=Guide%20de%20syntaxe%20de%20Markdown" target=_blank rel=noopener class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f&title=Guide%20de%20syntaxe%20de%20Markdown" target=_blank rel=noopener class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f&description=Guide%20de%20syntaxe%20de%20Markdown" target=_blank rel=noopener class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%9c%ac%e6%96%87%e7%9a%84%e4%bd%9c%e8%80%85 Hugo%20Auteurs&body=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f" target=_blank class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id=wrapper>
+<section id=site-intro>
+<a href=/zh-cn/><img src=/img/main/logo.jpg class=circle width=100 alt="Hugo Future Imperfect Slim"></a>
+<header>
+<h1>Hugo Future Imperfect Slim</h1>
+</header>
+<main>
+<p>Another fine, responsive site template by <a href=http://html5up.net>HTML5 UP</a>.</p>
+</main>
+<footer>
+<ul class=socnet-icons>
+<li><a href=//github.com/pacollins/hugo-future-imperfect-slim target=_blank rel=noopener title=GitHub class="fab fa-github"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&uin=1017241746&site=qq&menu=yes" target=_blank rel=noopener title=QQ class="fab fa-qq"></a></li>
+<li><a href="//scholar.google.com/citations?user=quancs" target=_blank rel=noopener title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href=mailto:quancs@qq.com target=_blank title=Email class="far fa-envelope"></a></li>
+</ul>
+</footer>
+</section>
+<main id=site-main>
+<article>
+<div class=post>
+<header>
+<div class=title>
+<h2><a href=/zh-cn/blog/markdown-syntax/>Guide de syntaxe de Markdown</a></h2>
+<p>Exemple d'article présentant la syntaxe et le formatage de base de Markdown pour les éléments HTML.</p>
+</div>
+<div class=meta>
+<time datetime="2019-03-11 00:00:00 +0000 UTC">March 11, 2019</time>
+<p>Hugo Auteurs</p>
+<p>3 分钟</p>
+</div>
+</header>
+<div id=socnet-share>
+<a href="//twitter.com/share?text=Guide%20de%20syntaxe%20de%20Markdown&url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f" target=_blank rel=noopener class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f" target=_blank rel=noopener class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f&title=Guide%20de%20syntaxe%20de%20Markdown" target=_blank rel=noopener class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f&title=Guide%20de%20syntaxe%20de%20Markdown" target=_blank rel=noopener class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f&description=Guide%20de%20syntaxe%20de%20Markdown" target=_blank rel=noopener class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%9c%ac%e6%96%87%e7%9a%84%e4%bd%9c%e8%80%85 Hugo%20Auteurs&body=https%3a%2f%2fhugo-future-imperfect-slim.netlify.app%2fzh-cn%2fblog%2fmarkdown-syntax%2f" target=_blank class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class=content>
+<a href=/zh-cn/blog/markdown-syntax/ class=image style="--bg-image:url('/img/2019/03/pic01.jpg')">
+<img class=stretchH src=/img/2019/03/pic01.jpg alt="Mountain Range Through Clouds">
+</a>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#rubriques>Rubriques</a></li>
+</ul>
+<ul>
+<li><a href=#h2>H2</a>
+<ul>
+<li><a href=#h3>H3</a></li>
+</ul>
+</li>
+<li><a href=#paragraphe>Paragraphe</a></li>
+<li><a href=#blockquotes>Blockquotes</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href=#les-tables>Les tables</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href=#blocs-de-code>Blocs de code</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href=#types-de-liste>Types de liste</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href=#autres-éléments---abbr-sous-sup-kbd-mark>Autres éléments - abbr, sous, sup, kbd, mark</a></li>
+</ul>
+</nav>
+<p>Cet article propose un exemple de syntaxe de base de Markdown pouvant être utilisée dans les fichiers de contenu Hugo. Il indique également si les éléments HTML de base sont décorés avec CSS dans un thème Hugo.</p>
+<h2 id=rubriques>Rubriques</h2>
+<p>Les éléments HTML <code>&lt;h1></code> —<code>&lt;h6></code>suivants représentent six niveaux d&rsquo;en-tête de section. <code>&lt;h1></code> est le niveau de section le plus élevé tandis que <code>&lt;h6></code> est le plus bas.</p>
+<h1 id=h1>H1</h1>
+<h2 id=h2>H2</h2>
+<h3 id=h3>H3</h3>
+<h4 id=h4>H4</h4>
+<h5 id=h5>H5</h5>
+<h6 id=h6>H6</h6>
+<h2 id=paragraphe>Paragraphe</h2>
+<p>Xerum, mais qui est un peu explicite sur le labo. Ace venitatiusda cum, voluptionse latur sitiae dolessi aut paristo nue en vol qui voluptate dolestendit péritin re plis aut quas inctum laceat est volestemque commosa comme date de fin, agent de base Quianimin porecus evelectur, cum que nis noll voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Vérifiez les résultats, notez les réponses, les rapports, les rapports, les chiffres, les chiffres, les chiffres, les chiffres, les chiffres, le temps, le temps, le temps, la durée, le temps, le temps, et le temps, puis le temps.</p>
+<p>Itatur? Quiatae cullecum se souvient de manière automatique dans les archives non-formées. Sapicia est sinveli squiatum, noyau et que aut hariosam ex eat.</p>
+<h2 id=blockquotes>Blockquotes</h2>
+<p>L&rsquo;élément blockquote représente le contenu cité d&rsquo;une autre source, éventuellement avec une citation qui doit figurer dans un élément <code>footer</code> ou<code> cite</code>, et éventuellement avec des modifications en ligne telles que des annotations et des abréviations.</p>
+<h4 id=blockquote-sans-attribution>Blockquote sans attribution</h4>
+<blockquote>
+<p>Tiam, menthe et andaepu dandae nostion secatur sequo quae.
+<strong>Remarque</strong> que vous pouvez utiliser la syntaxe * Markdown * dans un bloc de citation.</p>
+</blockquote>
+<h4 id=blockquote-avec-attribution>Blockquote avec attribution</h4>
+<blockquote>
+<p>Ne communiquez pas en partageant la mémoire, partagez la mémoire en communiquant. </p></p>
+<ul>
+<li><cite> Rob Pike <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> </cite></li>
+</ul>
+</blockquote>
+<h2 id=les-tables>Les tables</h2>
+<p>Les tables ne font pas partie de la spécification Markdown principale, mais Hugo les prend en charge immédiatement.</p>
+<table>
+<thead>
+<tr>
+<th>   Nom</th>
+<th>Âge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>    Bob</td>
+<td>27</td>
+</tr>
+<tr>
+<td>  Alice</td>
+<td>23</td>
+</tr>
+</tbody>
+</table>
+<h4 id=inline-markdown-au-sein-des-tables>Inline Markdown au sein des tables</h4>
+<table>
+<thead>
+<tr>
+<th>En ligne & nbsp; & nbsp; & nbsp;</th>
+<th>Markdown & nbsp; & nbsp; & nbsp;</th>
+<th>Dans & nbsp; & nbsp; & nbsp;</th>
+<th>Tableau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>* italique *</td>
+<td>** gras **</td>
+<td>~~ barré ~~ & nbsp; & nbsp; & nbsp;</td>
+<td><code>code</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id=blocs-de-code>Blocs de code</h2>
+<h4 id=bloc-de-code-avec-backticks>Bloc de code avec backticks</h4>
+<pre tabindex=0><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Exemple de document HTML5 &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h4 id=bloc-de-code-indenté-de-quatre-espaces>Bloc de code indenté de quatre espaces</h4>
+<p>    <!doctype html>
+    <html lang=en>
+    <head>
+      <meta charset=utf-8>
+      <title>Exemple de document HTML5</title>
+    </head>
+    <body>
+      <p>Test</p>
+    </body>
+    </html></p>
+<h4 id=bloc-de-code-avec-le-shortcode-interne-de-la-surbrillance-de-hugo>Bloc de code avec le shortcode interne de la surbrillance de Hugo</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
+&lt;<span style=color:#f92672>head</span>&gt;
+  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;UTF-8&#34;</span>&gt;
+  &lt;<span style=color:#f92672>title</span>&gt; Exemple de document HTML5 &lt;/<span style=color:#f92672>title</span>&gt;
+&lt;/<span style=color:#f92672>head</span>&gt;
+&lt;<span style=color:#f92672>body</span>&gt;
+  &lt;<span style=color:#f92672>p</span>&gt;Test&lt;/<span style=color:#f92672>p</span>&gt;
+&lt;/<span style=color:#f92672>body</span>&gt;
+&lt;/<span style=color:#f92672>html</span>&gt;</code></pre></div>
+<h2 id=types-de-liste>Types de liste</h2>
+<h4 id=liste-ordonnée>Liste ordonnée</h4>
+<ol>
+<li>Premier article</li>
+<li>Deuxième élément</li>
+<li>Troisième article</li>
+</ol>
+<h4 id=liste-non-ordonnée>Liste non ordonnée</h4>
+<ul>
+<li>Élément de liste</li>
+<li>Un autre article</li>
+<li>Et un autre article</li>
+</ul>
+<h4 id=liste-imbriquée>Liste imbriquée</h4>
+<ul>
+<li>Article</li>
+</ul>
+<ol>
+<li>Premier sous-article</li>
+<li>Deuxième sous-article</li>
+</ol>
+<h2 id=autres-éléments---abbr-sous-sup-kbd-mark>Autres éléments - abbr, sous, sup, kbd, mark</h2>
+<p><abbr title="Format d'échange graphique">GIF</abbr> est un format d&rsquo;image bitmap.</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup>+Y<sup>n</sup>=Z<sup>n</sup></p>
+<p>Appuyez sur <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Supprimer</kbd></kbd> pour mettre fin à la session.</p>
+<p>La plupart des <mark>salamandres</mark> sont nocturnes et chassent les insectes, les vers et autres petites créatures.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>La citation ci-dessus est extraite de [conversation] de Rob Pike (<a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">https://www.youtube.com/watch?v=PAAkCSZUG1c</a>) lors de la fête de Gopherfest, le 18 novembre 2015.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<footer>
+<div class=stats>
+<ul class=categories>
+<li><a class=article-terms-link href=/zh-cn/categories/themes/>themes</a></li>
+<li><a class=article-terms-link href=/zh-cn/categories/syntax/>syntax</a></li>
+</ul>
+<ul class=tags>
+<li><a class=article-terms-link href=/zh-cn/tags/markdown/>markdown</a></li>
+<li><a class=article-terms-link href=/zh-cn/tags/css/>css</a></li>
+<li><a class=article-terms-link href=/zh-cn/tags/html/>html</a></li>
+<li><a class=article-terms-link href=/zh-cn/tags/themes/>themes</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class=post>
+<div>
+<h2 id=say-something>说些什么</h2>
+<form id=comment-form class=new-comment method=post>
+<h3 class="reply-notice hidden">
+<span class=reply-name></span>
+<a class="reply-close-btn button"><i class="fas fa-times"></i></a>
+</h3>
+<input type=hidden name=options[entryId] value=a4726f92dfcd7bbcdcd3b735142f5703>
+<input type=hidden name=fields[replyThread]>
+<input type=hidden name=fields[replyID]>
+<input type=hidden name=fields[replyName]>
+<input required name=fields[name] type=text placeholder=你的名字>
+<input name=fields[website] type=text placeholder=你的网页>
+<input required name=fields[email] type=email placeholder=你的邮件>
+<textarea required name=fields[body] placeholder=你的信息 rows=10></textarea>
+<div class=submit-notice>
+<strong class="submit-notice-text submit-success hidden">感谢你的评论！被批准后它会立即在此站点展示。</strong>
+<strong class="submit-notice-text submit-failed hidden">很抱歉，你的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。</strong>
+</div>
+<button type=button id=comment-form-submit class=button>发送</button>
+<button type=button id=comment-form-submitted class="hidden button" disabled>已发送</button>
+<button type=reset id=comment-form-reset class=button>重设</button>
+</form>
+</div>
+<div class=comments-container>
+<h2>评论</h2><p>还沒有留言。</p>
+</div>
+</div>
+</article>
+<div class=pagination>
+<a href=/zh-cn/blog/rich-content/ class="button right"><span>Contenu riche</span></a>
+</div>
+</main>
+<section id=site-sidebar>
+<section id=recent-posts>
+<header>
+<h1>最新文章</h1>
+</header>
+<article class=mini-post>
+<a href=/zh-cn/blog/markdown-syntax/ class=image style="--bg-image:url('/img/2019/03/pic01.jpg')">
+<img class=stretchH src=/img/2019/03/pic01.jpg alt="Mountain Range Through Clouds">
+</a>
+<header>
+<h2><a href=/zh-cn/blog/markdown-syntax/>Guide de syntaxe de Markdown</a></h2>
+<time class=published datetime="2019-03-11 00:00:00 +0000 UTC">March 11, 2019</time>
+</header>
+</article>
+<article class=mini-post>
+<a href=/zh-cn/blog/rich-content/ class=image style="--bg-image:url('/img/main/logo.jpg')">
+<img class=stretchV src=/img/main/logo.jpg alt=Fox>
+</a>
+<header>
+<h2><a href=/zh-cn/blog/rich-content/>Contenu riche</a></h2>
+<time class=published datetime="2019-03-10 00:00:00 +0000 UTC">March 10, 2019</time>
+</header>
+</article>
+<article class=mini-post>
+<a href=/zh-cn/blog/emoji-support/ class=image style="--bg-image:url('/img/2019/03/pic02.jpg')">
+<img src=/img/2019/03/pic02.jpg alt="Desert Scene">
+</a>
+<header>
+<h2><a href=/zh-cn/blog/emoji-support/>Emoji Support</a></h2>
+<time class=published datetime="2019-03-05 00:00:00 +0000 UTC">March 5, 2019</time>
+</header>
+</article>
+</section>
+<section id=categories>
+<header>
+<h1><a href=/zh-cn/categories>分类</a></h1>
+</header>
+<ul>
+<li>
+<a href=/zh-cn/categories/syntax/>syntax<span class=count>1</span></a>
+<li>
+<a href=/zh-cn/categories/themes/>themes<span class=count>1</span></a>
+</li>
+</ul>
+</section>
+<section id=mini-bio>
+<header>
+<h1>关于</h1>
+</header>
+<p>This theme was developed for Hugo static site generator.</p>
+<footer>
+<a href=/zh-cn/about class=button>详细了解</a>
+</footer>
+</section>
+</section>
+<footer id=site-footer>
+<ul class=socnet-icons>
+<li><a href=//github.com/pacollins/hugo-future-imperfect-slim target=_blank rel=noopener title=GitHub class="fab fa-github"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&uin=1017241746&site=qq&menu=yes" target=_blank rel=noopener title=QQ class="fab fa-qq"></a></li>
+<li><a href="//scholar.google.com/citations?user=quancs" target=_blank rel=noopener title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href=mailto:quancs@qq.com target=_blank title=Email class="far fa-envelope"></a></li>
+</ul>
+<p class=copyright>
+© 2019 失败乃成功之母
+<br>
+主题: <a href=https://themes.gohugo.io/hugo-future-imperfect-slim/ target=_blank rel=noopener>Hugo Future Imperfect Slim</a><br>移植自 <a href=https://html5up.net/future-imperfect target=_blank rel=noopener>HTML5 UP</a> | 由 <a href=https://gohugo.io/ target=_blank rel=noopener title=0.89.4>Hugo</a> 驱动
+</p>
+</footer>
+<a id=back-to-top href=# class="fas fa-arrow-up fa-2x"></a>
+<script src=/js/highlight.js></script>
+<script>hljs.highlightAll()</script><script src=/js/bundle.min.52201412303ccb06ed91e44a188cb15222584859fafc67185f7f893eb0c4627b.js integrity="sha256-UiAUEjA8ywbtkeRKGIyxUiJYSFn6/GcYX3+JPrDEYns="></script>
+<script src=/js/add-on.js></script>
+</div>
+</body>
+</html>
