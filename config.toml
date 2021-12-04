@@ -51,7 +51,7 @@ ignoreErrors = ["error-remote-getjson"]
     navbarTitle         = "Home"
     dynamicTitles       = true
     searchMenu          = true
-    shareMenu           = true
+    shareMenu           = false
     languageMenu        = true
 
   [params.intro]
@@ -211,6 +211,14 @@ ignoreErrors = ["error-remote-getjson"]
         shape               = "circle"
         width               = ""
         alt                 = "Changsheng Quan's Photo"
+
+    
+    [Languages.zh-CN.params.header]
+      navbarTitle         = "主页"
+      dynamicTitles       = true
+      searchMenu          = true
+      shareMenu           = false
+      languageMenu        = true
 
 
 [social]
