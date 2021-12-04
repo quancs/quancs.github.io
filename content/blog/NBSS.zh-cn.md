@@ -83,7 +83,7 @@ FaSNet-TAC [3] | 12.81 | 12.26 | 2.92 | 2.49
 
 
 ## 源代码
-本文方法已在github上开源，见 **[\[<font color=DarkOrchid>code</font>\]](https://github.com/quancs/NBSS)** 和 **[\[<font color=DarkOrchid>pdf</font>\]](https://arxiv.org/pdf/2110.05966)**. 如果你喜欢这个工作且想要引用，请使用：
+本方法已在github上开源，见 **[\[<font color=DarkOrchid>code</font>\]](https://github.com/quancs/NBSS)** 和 **[\[<font color=DarkOrchid>pdf</font>\]](https://arxiv.org/pdf/2110.05966)**. 如果你喜欢我们的工作且愿意引用，请使用：
 ```
 @article{quan_multi-channel_2021,
 	title = {Multi-channel {Narrow}-{Band} {Deep} {Speech} {Separation} with {Full}-band {Permutation} {Invariant} {Training}},

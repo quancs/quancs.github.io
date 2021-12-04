@@ -82,7 +82,7 @@ Examples | Mix | Oracle MVDR | FaSNet-TAC | prop.
 
 
 ## Source Code
-This work is open sourced at github, see **[\[<font color=DarkOrchid>code</font>\]](https://github.com/quancs/NBSS)** and **[\[<font color=DarkOrchid>pdf</font>\]](https://arxiv.org/pdf/2110.05966)**. If you like this work and want to cite us, please use:
+This work is open sourced at github, see **[\[<font color=DarkOrchid>code</font>\]](https://github.com/quancs/NBSS)** and **[\[<font color=DarkOrchid>pdf</font>\]](https://arxiv.org/pdf/2110.05966)**. If you like this work and are willing to cite us, please use:
 ```
 @article{quan_multi-channel_2021,
 	title = {Multi-channel {Narrow}-{Band} {Deep} {Speech} {Separation} with {Full}-band {Permutation} {Invariant} {Training}},
