@@ -33,9 +33,9 @@ ignoreErrors = ["error-remote-getjson"]
   readingTime           = true
   imageStretch          = ""
   removeBlur            = false
-  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
-  hideEmptyStats        = false
-  toc                   = true
+  # socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+  hideEmptyStats        = true
+  toc                   = false
   tocWords              = 400
 
   [params.meta]
@@ -48,35 +48,35 @@ ignoreErrors = ["error-remote-getjson"]
     iOSColor            = "#ffffff"
 
   [params.header]
-    navbarTitle         = "Future Imperfect"
+    navbarTitle         = "Home"
     dynamicTitles       = true
     searchMenu          = true
     shareMenu           = true
     languageMenu        = true
 
   [params.intro]
-    header                = "Hugo Future Imperfect Slim"
-    paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
+    header                = "Changsheng Quan"
+    paragraph             = "A PhD Candidate of <a href='https://www.westlake.edu.cn'>Westlake University</a>."
     rssIntro              = true
     socialIntro           = true
-    hideWhenSingleColumn  = false
+    hideWhenSingleColumn  = true
     alwaysOnHomepage      = false
 
     [params.intro.pic]
       src                 = "img/main/logo.jpg"
       shape               = "circle"
       width               = ""
-      alt                 = "Hugo Future Imperfect Slim"
+      alt                 = "Changsheng Quan's Photo"
 
   [params.sidebar]
-    about               = "This theme was developed for Hugo static site generator."
+    # about               = "This theme was developed for Hugo static site generator."
     postAmount          = 5
-    categories          = true
+    categories          = false
     categoriesByCount   = true
 
-  [params.footer]
-    rssFooter           = true
-    socialFooter        = true
+  # [params.footer]
+  #   rssFooter           = true
+  #   socialFooter        = true
 
   [params.utterances]
     enabled             = false
@@ -86,17 +86,17 @@ ignoreErrors = ["error-remote-getjson"]
     label               = ""
     theme               = "github-light"
 
-  [params.staticman]
-    enabled             = true
-    api                 = ""  # No Trailing Slash
-    gitProvider         = ""
-    username            = ""
-    repo                = ""
-    branch              = ""
+  # [params.staticman]
+  #   enabled             = true
+  #   api                 = ""  # No Trailing Slash
+  #   gitProvider         = ""
+  #   username            = ""
+  #   repo                = ""
+  #   branch              = ""
 
-    [params.staticman.recaptcha]
-      siteKey           = ""
-      encryptedKey      = ""
+  #   [params.staticman.recaptcha]
+  #     siteKey           = ""
+  #     encryptedKey      = ""
 
 [menu]
 
@@ -108,7 +108,7 @@ ignoreErrors = ["error-remote-getjson"]
     weight            = 1
 
   [[menu.main]]
-    name              = "About"
+    name              = "About Me"
     identifier        = "about"
     url               = "about"
     pre               = "<i class='far fa-id-card'></i>"
@@ -121,12 +121,12 @@ ignoreErrors = ["error-remote-getjson"]
     pre               = "<i class='far fa-newspaper'></i>"
     weight            = 3
 
-  [[menu.main]]
-    name              = "Categories"
-    identifier        = "categories"
-    url               = "categories"
-    pre               = "<i class='fas fa-sitemap'></i>"
-    weight            = 5
+  # [[menu.main]]
+  #   name              = "Categories"
+  #   identifier        = "categories"
+  #   url               = "categories"
+  #   pre               = "<i class='fas fa-sitemap'></i>"
+  #   weight            = 5
 
   [[menu.main]]
     name              = "Contact"
@@ -134,6 +134,13 @@ ignoreErrors = ["error-remote-getjson"]
     url               = "contact"
     pre               = "<i class='far fa-envelope'></i>"
     weight            = 6
+
+  [[menu.main]]
+    name              = "Publication"
+    identifier        = "publication"
+    url               = "publication"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 7
 
 [Languages]
 
@@ -145,8 +152,8 @@ ignoreErrors = ["error-remote-getjson"]
   [Languages.zh-CN]
     LanguageCode        = "zh-CN"
     LanguageName        = "中文 (简体)"
-    title               = "失败乃成功之母"
-    description         = "中文 (简体) 描述"
+    # title               = "失败乃成功之母"
+    # description         = "中文 (简体) 描述"
     weight              = 2
 
     [[Languages.zh-CN.menu.main]]
@@ -157,7 +164,7 @@ ignoreErrors = ["error-remote-getjson"]
       weight            = 1
 
     [[Languages.zh-CN.menu.main]]
-      name              = "关于"
+      name              = "关于我"
       identifier        = "about"
       url               = "about"
       pre               = "<i class='far fa-id-card'></i>"
@@ -170,12 +177,12 @@ ignoreErrors = ["error-remote-getjson"]
       pre               = "<i class='far fa-newspaper'></i>"
       weight            = 3
 
-    [[Languages.zh-CN.menu.main]]
-      name              = "类别"
-      identifier        = "categories"
-      url               = "categories"
-      pre               = "<i class='fas fa-sitemap'></i>"
-      weight            = 5
+    # [[Languages.zh-CN.menu.main]]
+    #   name              = "类别"
+    #   identifier        = "categories"
+    #   url               = "categories"
+    #   pre               = "<i class='fas fa-sitemap'></i>"
+    #   weight            = 5
 
     [[Languages.zh-CN.menu.main]]
       name              = "联系方式"
@@ -184,10 +191,31 @@ ignoreErrors = ["error-remote-getjson"]
       pre               = "<i class='far fa-envelope'></i>"
       weight            = 6
 
+    [[Languages.zh-CN.menu.main]]
+      name              = "发表文献"
+      identifier        = "publication"
+      url               = "publication"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 7
+
+    [Languages.zh-CN.params.intro]
+      header                = "全昌盛"
+      paragraph             = "一名<a href='https://www.westlake.edu.cn'>西湖大学</a>的博士研究生。"
+      rssIntro              = true
+      socialIntro           = true
+      hideWhenSingleColumn  = true
+      alwaysOnHomepage      = false
+
+      [Languages.zh-CN.params.intro.pic]
+        src                 = "img/main/logo.jpg"
+        shape               = "circle"
+        width               = ""
+        alt                 = "Changsheng Quan's Photo"
+
 
 [social]
   # Coding Communities
-  github                = "pacollins/hugo-future-imperfect-slim"
+  github                = "quancs"
 #   gitlab                = ""
 #   stackoverflow         = "" # User Number
 #   bitbucket             = ""
