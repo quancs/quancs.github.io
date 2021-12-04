@@ -1,25 +1,18 @@
 +++
-title = "关于"
-description = "Hugo, the world’s fastest framework for building websites"
-author = "Hugo Authors"
-date = "2019-02-28"
+title = "关于我"
+description = "一名西湖大学的博士研究生"
+author = "quancs"
+date = "2021-12-01"
 layout = "about"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+## 个人资料
 
-Hugo makes use of a variety of open source projects including:
+我是[西湖大学](https://www.westlake.edu.cn)和[浙江大学](https://www.zju.edu.cn)联合培养博士研究生，我的导师是 **[李晓飞教授](https://lixiaofei-audio.github.io/)** 。我目前还是 **[西湖大学音频实验室](https://audio.westlake.edu.cn)** 的一名成员。
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+## 研究兴趣
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+我的研究兴趣主要包括机器学习和声音信号处理，具体包括语音分离、语音降噪、语音识别。
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+## 更多
+[Github](https://github.com/quancs), [Google Scholar](https://scholar.google.com/citations?user=prTK3NwAAAAJ)

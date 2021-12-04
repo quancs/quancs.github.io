@@ -56,7 +56,7 @@ ignoreErrors = ["error-remote-getjson"]
 
   [params.intro]
     header                = "Changsheng Quan"
-    paragraph             = "A PhD Candidate of <a href='https://www.westlake.edu.cn'>Westlake University</a>."
+    paragraph             = "A PhD Student of Computer Science"
     rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = true
@@ -200,7 +200,7 @@ ignoreErrors = ["error-remote-getjson"]
 
     [Languages.zh-CN.params.intro]
       header                = "全昌盛"
-      paragraph             = "一名<a href='https://www.westlake.edu.cn'>西湖大学</a>的博士研究生。"
+      paragraph             = "一名<a href='https://www.westlake.edu.cn'>计算机科学专业</a>的博士研究生"
       rssIntro              = true
       socialIntro           = true
       hideWhenSingleColumn  = true
@@ -255,7 +255,7 @@ ignoreErrors = ["error-remote-getjson"]
 #   pinterest             = "example"
 #   telegram              = "example"
 #   vine                  = ""
-  googlescholar         = "quancs"
+  googlescholar         = "prTK3NwAAAAJ"
 #   orcid                 = ""
 #   researchgate          = "example"
 #   keybase               = "example"

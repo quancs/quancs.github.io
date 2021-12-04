@@ -1,25 +1,18 @@
 +++
-title = "About"
-description = "Hugo, the world’s fastest framework for building websites"
-author = "Hugo Authors"
-date = "2019-02-28"
+title = "About Me"
+description = "A Computer Science PhD Student"
+author = "quancs"
+date = "2021-12-01"
 layout = "about"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+## Personal Profile
 
-Hugo makes use of a variety of open source projects including:
+I am a joint Ph.D. student of [Westlake University](https://www.westlake.edu.cn) and [Zhejiang University](https://www.zju.edu.cn), advised by **[Dr. Xiaofei Li](https://lixiaofei-audio.github.io/)**. Also, I am a member of **[Audio Laboratory](https://audio.westlake.edu.cn)** in Westlake University, where I do my research work on Machine Learning, and Speech Separation.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+## Research
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+My research interests include Machine Learning and Audio Signal Processing. Especially in, Speech Separation, Enhancement, ASR.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+## More
+[Github](https://github.com/quancs), [Google Scholar](https://scholar.google.com/citations?user=prTK3NwAAAAJ)
