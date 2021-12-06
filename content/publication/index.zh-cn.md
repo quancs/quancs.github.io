@@ -1,6 +1,6 @@
 +++
 title = "发表文献"
-description = "为中华之崛起为读书。   ——————周恩来"
+description = "为中华之崛起而读书。   ——————周恩来"
 author = "quancs"
 date = "2021-12-04"
 layout = "about"
