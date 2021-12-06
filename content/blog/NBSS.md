@@ -1,6 +1,6 @@
 +++
 title = "Narrow-band Deep Speech Separation"
-description = "Multi-channel Narrow-Band Deep Speech Separation with Full-band Permutation Invariant Training"
+description = "Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training"
 author = "quancs"
 date = "2021-12-04"
 #tags = ["emoji"]
