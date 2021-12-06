@@ -1,6 +1,6 @@
 +++
-title = "Narrow-band Speech Separation"
-description = "Narrow-band Speech Separation with Full-band Permutation Invariant Training"
+title = "Narrow-band Deep Speech Separation"
+description = "Multi-channel Narrow-Band Deep Speech Separation with Full-band Permutation Invariant Training"
 author = "quancs"
 date = "2021-12-04"
 #tags = ["emoji"]
@@ -71,7 +71,7 @@ prop. | **13.89** | **13.26** | **3.31** | **2.87**
 ## Examples
 
 
-Examples | Mix | Oracle MVDR | FaSNet-TAC | prop.
+Examples | Mix | Oracle MVDR [2] | FaSNet-TAC [3] | prop.
 ---------|-----|-------------|------------|------
 1        | <audio controls src="/blog/NBSS_examples/1_mix.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_MVDR.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_MVDR.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_TAC.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_TAC.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_NBSS.wav" ></audio>
 2        | <audio controls src="/blog/NBSS_examples/0_mix.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_MVDR.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_MVDR.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_TAC.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_TAC.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_NBSS.wav" ></audio>

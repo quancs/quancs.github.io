@@ -1,6 +1,6 @@
 +++
-title = "窄带语音分离"
-description = "窄带语音分离和全频带组合不变训练"
+title = "深度窄带语音分离"
+description = "深度窄带语音分离和全频带组合不变训练"
 author = "quancs"
 date = "2021-12-04"
 #tags = ["emoji"]
