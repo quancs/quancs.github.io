@@ -94,7 +94,7 @@ This work is open sourced at github, see **[\[<font color=DarkOrchid>code</font>
 
 ## References
 
-[1] Robin Scheibler. 2021. SDR -- Medium Rare with Fast Computations. arXiv:2110.06440.
+[1] Jonathan Le Roux, Scott Wisdom, Hakan Erdogan, and John R. Hershey. SDR – Half-baked or Well Done? In ICASSP 2019.
 
 [2] https://github.com/Enny1991/beamformers
 
