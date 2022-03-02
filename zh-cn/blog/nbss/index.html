@@ -1,8 +1,7 @@
 <!doctype html><html lang=zh-cn>
 <head>
 <meta charset=utf-8>
-<title>深度窄带语音分离 - Changsheng Quan</title>
-<meta name=description content="深度窄带语音分离和全频带组合不变训练">
+<title>深度窄带语音分离 - Changsheng Quan</title><meta name=description content="深度窄带语音分离和全频带组合不变训练">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=twitter:card content="summary_large_image">
 <meta property="og:site_name" content="Changsheng Quan">
@@ -12,18 +11,16 @@
 <meta property="og:url" content="https://quancs.github.io/zh-cn/blog/nbss/">
 <meta property="og:image" content="https://quancs.github.io/img/main/logo.jpg">
 <link rel="shortcut icon" href="/favicon.ico?v=1">
-<meta name=generator content="Hugo 0.90.0">
+<meta name=generator content="Hugo 0.93.0">
 <link rel=stylesheet href=/css/bundle.min.95cbbf94d60e35b3dbbb8f4b3e4cb5047cf01280e691386b07a7f74d67068512.css integrity="sha256-lcu/lNYONbPbu49LPky1BHzwEoDmkThrB6f3TWcGhRI="><link rel=stylesheet href=/css/add-on.css>
-</head>
-<body>
+</head><body>
 <header id=site-header>
 <nav id=site-nav>
 <h1 class=nav-title>
 <a href=/zh-cn/ class=nav>
 博客
 </a>
-</h1>
-<menu id=site-nav-menu class="flyout-menu menu">
+</h1><menu id=site-nav-menu class="flyout-menu menu">
 <a href=/zh-cn/ class="nav link"><i class="fas fa-home"></i> 主页</a>
 <a href=/zh-cn/about class="nav link"><i class="far fa-id-card"></i> 关于我</a>
 <a href=/zh-cn/blog class="nav link"><i class="far fa-newspaper"></i> 博客</a>
@@ -34,224 +31,80 @@
 <a href=#search-input class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
 <a href=#lang-menu class="nav lang-toggle" lang=zh-cn>zh-cn</a>
 <a href=#site-nav class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-</nav>
-<menu id=search class=menu><input id=search-input class="search-input menu"></input><div id=search-results class="search-results menu"></div></menu>
+</nav><menu id=search class=menu><input id=search-input class="search-input menu"></input><div id=search-results class="search-results menu"></div></menu>
 <menu id=lang-menu class="flyout-menu menu">
 <a href=# lang=zh-cn class="nav link active">中文 (简体) (zh-cn)</a>
 <a href=https://quancs.github.io/blog/nbss/ lang=en class="nav link">English (en)</a>
 </menu>
-</header>
-<div id=wrapper>
+</header><div id=wrapper>
 <section id=site-intro class=hidden-single-column>
 <a href=/zh-cn/><img src=/img/main/logo.jpg class=circle width=100 alt="Changsheng Quan's Photo"></a>
 <header>
-<h1>全昌盛</h1>
-</header>
-<main>
-<p>一名<a href=https://www.westlake.edu.cn>计算机科学专业</a>的博士研究生</p>
-</main>
-<footer>
+<h1>全昌盛</h1></header><main>
+<p>一名<a href=https://www.westlake.edu.cn>计算机科学专业</a>的博士研究生</p></main><footer>
 <ul class=socnet-icons>
-<li><a href=//github.com/quancs target=_blank rel=noopener title=GitHub class="fab fa-github"></a></li>
-<li><a href="//wpa.qq.com/msgrd?v=3&uin=1017241746&site=qq&menu=yes" target=_blank rel=noopener title=QQ class="fab fa-qq"></a></li>
-<li><a href="//scholar.google.com/citations?user=prTK3NwAAAAJ" target=_blank rel=noopener title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
-<li><a href=mailto:quancs@qq.com target=_blank title=Email class="far fa-envelope"></a></li>
-</ul>
-</footer>
-</section>
-<main id=site-main>
+<li><a href=//github.com/quancs target=_blank rel=noopener title=GitHub class="fab fa-github"></a></li><li><a href="//wpa.qq.com/msgrd?v=3&uin=1017241746&site=qq&menu=yes" target=_blank rel=noopener title=QQ class="fab fa-qq"></a></li><li><a href="//scholar.google.com/citations?user=prTK3NwAAAAJ" target=_blank rel=noopener title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li><li><a href=mailto:quancs@qq.com target=_blank title=Email class="far fa-envelope"></a></li></ul></footer></section><main id=site-main>
 <article>
 <div class=post>
 <header>
 <div class=title>
-<h2><a href=/zh-cn/blog/nbss/>深度窄带语音分离</a></h2>
-<p>深度窄带语音分离和全频带组合不变训练</p>
-</div>
-<div class=meta>
+<h2><a href=/zh-cn/blog/nbss/>深度窄带语音分离</a></h2><p>深度窄带语音分离和全频带组合不变训练</p></div><div class=meta>
 <time datetime="2021-12-04 00:00:00 +0000 UTC">December 4, 2021</time>
-<p>quancs</p>
-<p>1 分钟</p>
-</div>
-</header>
-<div id=socnet-share>
-</div>
-<div class=content>
+<p>quancs</p><p>1 分钟</p></div></header><div id=socnet-share>
+</div><div class=content>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<h2 id=摘要>摘要</h2>
-<p>本文基于深度学习技术解决了多通道多语音分离问题。
+<h2 id=摘要>摘要</h2><p>本文基于深度学习技术解决了多通道多语音分离问题。
 我们提出了一种端到端窄带网络，以STFT域的一个频率的多通道混合信号作为输入，输出该频率的分离信号。
 在窄带（单个频带）上，空间信息的不同（或通道间差异）可以很好地区分不同位置的说话人。
 这种差异在许多基于窄带的语音分离方法中被大量使用，例如波束成形和空间矢量聚类。
 本文提出的网络通过训练来学习如何自动利用此信息，来得到语音分离的规则。
 这样的规则对任何频率都是有效的，因此网络可以由所有频率共享。
 此外，本文还提出了一种全频带的组合不变训练方法，以解决大多数窄带方法所遇到的频率组合问题。
-实验表明，通过对窄带信息的深度学习，本文提出的方法优于使用真值的波束成形方法和最先进的基于深度学习的分离方法。</p>
-<h2 id=方法>方法</h2>
-<p>本方法主要包括两个部分：
+实验表明，通过对窄带信息的深度学习，本文提出的方法优于使用真值的波束成形方法和最先进的基于深度学习的分离方法。</p><h2 id=方法>方法</h2><p>本方法主要包括两个部分：
 第一个部分是在单个频带上如何用网络进行分离；
-第二个部分是关于如何去解决频率组合问题来训练神经网络。</p>
-<p>以下内容假设麦克风个数为<em>M</em>，说话人个数为<em>N</em>。</p>
-<h3 id=1-窄带语音分离>1) 窄带语音分离</h3>
-<p><strong>准备窄带的输入.</strong>
-为什么选择窄带? 因为窄带包含了充足的不同说话人的空间信息。</p>
-<p><img src=/blog/NBSS_examples/narrow_band_input.jpg alt=image></p>
-<p><strong>网络处理:</strong> 训练神经网络来实现在窄带输入上分离不同说话人的目的。</p>
-<p><img src=/blog/NBSS_examples/network_processing.jpg alt=image2 title=向网络输入窄带信号></p>
-<h3 id=2-全频带组合不变训练full-band-permutation-invariant-training>2) 全频带组合不变训练（Full-band Permutation Invariant Training）</h3>
-<p><strong>频率组合问题（Frequency Permutation Problem）</strong>——如何得到分离出的信号的跨频率的相关性？例子：两说话人情况下的一种可能的频率组合方式：</p>
-<p><img src=/blog/NBSS_examples/fpp.jpg alt=image3></p>
-<p>本文提出的解决办法——<strong>频率绑定</strong>，强制认为在同一个输出位置的结果属于同一个说话人。</p>
-<p><img src=/blog/NBSS_examples/frequency_binding.jpg alt=image4></p>
-<p><strong>损失函数</strong></p>
-<p>$$ fPIT(\boldsymbol{\rm \widehat{Y}}^{1},\ldots, \boldsymbol{\rm \widehat{Y}}^{N}, \boldsymbol{\rm {Y}}^{1},\ldots,\boldsymbol{\rm {Y}}^{N})=\mathop{min}_{p\in \mathcal{P}}\frac{1}{N}\sum_n \mathcal{L}(\boldsymbol{{\rm {Y}}}^n,\boldsymbol{{\rm \widehat{Y}}}^{p(n)}) $$</p>
-<p>其中，<em>P</em>是全部可能的频率组合组成的集合，<em>p</em>是其中一种可能的频率组合。
-对于每对预测值和真值，负SI-SDR[1]被用来计算他们的损失。</p>
-<h2 id=实验结果>实验结果</h2>
-<p>在8通道2说话人情况下，和当前最佳分离算法的性能比较</p>
-<table>
+第二个部分是关于如何去解决频率组合问题来训练神经网络。</p><p>以下内容假设麦克风个数为<em>M</em>，说话人个数为<em>N</em>。</p><h3 id=1-窄带语音分离>1) 窄带语音分离</h3><p><strong>准备窄带的输入.</strong>
+为什么选择窄带? 因为窄带包含了充足的不同说话人的空间信息。</p><p><img src=/blog/NBSS_examples/narrow_band_input.jpg alt=image></p><p><strong>网络处理:</strong> 训练神经网络来实现在窄带输入上分离不同说话人的目的。</p><p><img src=/blog/NBSS_examples/network_processing.jpg alt=image2 title=向网络输入窄带信号></p><h3 id=2-全频带组合不变训练full-band-permutation-invariant-training>2) 全频带组合不变训练（Full-band Permutation Invariant Training）</h3><p><strong>频率组合问题（Frequency Permutation Problem）</strong>——如何得到分离出的信号的跨频率的相关性？例子：两说话人情况下的一种可能的频率组合方式：</p><p><img src=/blog/NBSS_examples/fpp.jpg alt=image3></p><p>本文提出的解决办法——<strong>频率绑定</strong>，强制认为在同一个输出位置的结果属于同一个说话人。</p><p><img src=/blog/NBSS_examples/frequency_binding.jpg alt=image4></p><p><strong>损失函数</strong></p><p>$$ fPIT(\boldsymbol{\rm \widehat{Y}}^{1},\ldots, \boldsymbol{\rm \widehat{Y}}^{N}, \boldsymbol{\rm {Y}}^{1},\ldots,\boldsymbol{\rm {Y}}^{N})=\mathop{min}_{p\in \mathcal{P}}\frac{1}{N}\sum_n \mathcal{L}(\boldsymbol{{\rm {Y}}}^n,\boldsymbol{{\rm \widehat{Y}}}^{p(n)}) $$</p><p>其中，<em>P</em>是全部可能的频率组合组成的集合，<em>p</em>是其中一种可能的频率组合。
+对于每对预测值和真值，负SI-SDR[1]被用来计算他们的损失。</p><h2 id=实验结果>实验结果</h2><p>在8通道2说话人情况下，和当前最佳分离算法的性能比较</p><table>
 <thead>
 <tr>
-<th>模型</th>
-<th>SDR</th>
-<th>SI-SDR</th>
-<th>NB-PESQ</th>
-<th>WB-PESQ</th>
-</tr>
-</thead>
-<tbody>
+<th>模型</th><th>SDR</th><th>SI-SDR</th><th>NB-PESQ</th><th>WB-PESQ</th></tr></thead><tbody>
 <tr>
-<td>分离前</td>
-<td>0.18</td>
-<td>0.00</td>
-<td>2.05</td>
-<td>1.6</td>
-</tr>
-<tr>
-<td>基于真值的MVDR [2]</td>
-<td>8.15</td>
-<td>4.58</td>
-<td>3.20</td>
-<td>2.62</td>
-</tr>
-<tr>
-<td>FaSNet-TAC [3]</td>
-<td>12.81</td>
-<td>12.26</td>
-<td>2.92</td>
-<td>2.49</td>
-</tr>
-<tr>
-<td>本文算法</td>
-<td><strong>13.89</strong></td>
-<td><strong>13.26</strong></td>
-<td><strong>3.31</strong></td>
-<td><strong>2.87</strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id=例子>例子</h2>
-<table>
+<td>分离前</td><td>0.18</td><td>0.00</td><td>2.05</td><td>1.6</td></tr><tr>
+<td>基于真值的MVDR [2]</td><td>12.19</td><td>11.70</td><td>3.21</td><td>2.68</td></tr><tr>
+<td>FaSNet-TAC [3]</td><td>12.81</td><td>12.26</td><td>2.92</td><td>2.49</td></tr><tr>
+<td>本文算法</td><td><strong>13.89</strong></td><td><strong>13.26</strong></td><td><strong>3.31</strong></td><td><strong>2.87</strong></td></tr></tbody></table><h2 id=例子>例子</h2><table>
 <thead>
 <tr>
-<th>例子</th>
-<th>混合语音</th>
-<th>基于真值的MVDR</th>
-<th>FaSNet-TAC</th>
-<th>本文算法</th>
-</tr>
-</thead>
-<tbody>
+<th>例子</th><th>混合语音</th><th>基于真值的MVDR</th><th>FaSNet-TAC</th><th>本文算法</th></tr></thead><tbody>
 <tr>
-<td>1</td>
-<td><audio controls src=/blog/NBSS_examples/1_mix.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/1_spk1_p_MVDR.wav></audio> </br> <audio controls src=/blog/NBSS_examples/1_spk2_p_MVDR.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/1_spk1_p_TAC.wav></audio> </br> <audio controls src=/blog/NBSS_examples/1_spk2_p_TAC.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/1_spk1_p_NBSS.wav></audio> </br> <audio controls src=/blog/NBSS_examples/1_spk2_p_NBSS.wav></audio></td>
-</tr>
-<tr>
-<td>2</td>
-<td><audio controls src=/blog/NBSS_examples/0_mix.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/0_spk1_p_MVDR.wav></audio> </br> <audio controls src=/blog/NBSS_examples/0_spk2_p_MVDR.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/0_spk1_p_TAC.wav></audio> </br> <audio controls src=/blog/NBSS_examples/0_spk2_p_TAC.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/0_spk1_p_NBSS.wav></audio> </br> <audio controls src=/blog/NBSS_examples/0_spk2_p_NBSS.wav></audio></td>
-</tr>
-<tr>
-<td>3</td>
-<td><audio controls src=/blog/NBSS_examples/2_mix.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/2_spk1_p_MVDR.wav></audio> </br> <audio controls src=/blog/NBSS_examples/2_spk2_p_MVDR.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/2_spk1_p_TAC.wav></audio> </br> <audio controls src=/blog/NBSS_examples/2_spk2_p_TAC.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/2_spk1_p_NBSS.wav></audio> </br> <audio controls src=/blog/NBSS_examples/2_spk2_p_NBSS.wav></audio></td>
-</tr>
-<tr>
-<td>4</td>
-<td><audio controls src=/blog/NBSS_examples/3_mix.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/3_spk1_p_MVDR.wav></audio> </br> <audio controls src=/blog/NBSS_examples/3_spk2_p_MVDR.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/3_spk1_p_TAC.wav></audio> </br> <audio controls src=/blog/NBSS_examples/3_spk2_p_TAC.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/3_spk1_p_NBSS.wav></audio> </br> <audio controls src=/blog/NBSS_examples/3_spk2_p_NBSS.wav></audio></td>
-</tr>
-<tr>
-<td>5</td>
-<td><audio controls src=/blog/NBSS_examples/4_mix.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/4_spk1_p_MVDR.wav></audio> </br> <audio controls src=/blog/NBSS_examples/4_spk2_p_MVDR.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/4_spk1_p_TAC.wav></audio> </br> <audio controls src=/blog/NBSS_examples/4_spk2_p_TAC.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/4_spk1_p_NBSS.wav></audio> </br> <audio controls src=/blog/NBSS_examples/4_spk2_p_NBSS.wav></audio></td>
-</tr>
-<tr>
-<td>6</td>
-<td><audio controls src=/blog/NBSS_examples/5_mix.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/5_spk1_p_MVDR.wav></audio> </br> <audio controls src=/blog/NBSS_examples/5_spk2_p_MVDR.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/5_spk1_p_TAC.wav></audio> </br> <audio controls src=/blog/NBSS_examples/5_spk2_p_TAC.wav></audio></td>
-<td><audio controls src=/blog/NBSS_examples/5_spk1_p_NBSS.wav></audio> </br> <audio controls src=/blog/NBSS_examples/5_spk2_p_NBSS.wav></audio></td>
-</tr>
-</tbody>
-</table>
-<h2 id=源代码>源代码</h2>
-<p>本方法已在github上开源，见 <strong><a href=https://github.com/quancs/NBSS>[<font color=DarkOrchid>code</font>]</a></strong> 和 <strong><a href=https://arxiv.org/pdf/2110.05966>[<font color=DarkOrchid>pdf</font>]</a></strong>. 如果你喜欢我们的工作且愿意引用，请使用：</p>
-<pre tabindex=0><code>@article{quan_multi-channel_2021,
+<td>1</td><td><audio controls src=/blog/NBSS_examples/1_mix.wav></audio></td><td><audio controls src=/blog/NBSS_examples/1_spk1_p_MVDR.wav></audio> </br><audio controls src=/blog/NBSS_examples/1_spk2_p_MVDR.wav></audio></td><td><audio controls src=/blog/NBSS_examples/1_spk1_p_TAC.wav></audio> </br><audio controls src=/blog/NBSS_examples/1_spk2_p_TAC.wav></audio></td><td><audio controls src=/blog/NBSS_examples/1_spk1_p_NBSS.wav></audio> </br><audio controls src=/blog/NBSS_examples/1_spk2_p_NBSS.wav></audio></td></tr><tr>
+<td>2</td><td><audio controls src=/blog/NBSS_examples/0_mix.wav></audio></td><td><audio controls src=/blog/NBSS_examples/0_spk1_p_MVDR.wav></audio> </br><audio controls src=/blog/NBSS_examples/0_spk2_p_MVDR.wav></audio></td><td><audio controls src=/blog/NBSS_examples/0_spk1_p_TAC.wav></audio> </br><audio controls src=/blog/NBSS_examples/0_spk2_p_TAC.wav></audio></td><td><audio controls src=/blog/NBSS_examples/0_spk1_p_NBSS.wav></audio> </br><audio controls src=/blog/NBSS_examples/0_spk2_p_NBSS.wav></audio></td></tr><tr>
+<td>3</td><td><audio controls src=/blog/NBSS_examples/2_mix.wav></audio></td><td><audio controls src=/blog/NBSS_examples/2_spk1_p_MVDR.wav></audio> </br><audio controls src=/blog/NBSS_examples/2_spk2_p_MVDR.wav></audio></td><td><audio controls src=/blog/NBSS_examples/2_spk1_p_TAC.wav></audio> </br><audio controls src=/blog/NBSS_examples/2_spk2_p_TAC.wav></audio></td><td><audio controls src=/blog/NBSS_examples/2_spk1_p_NBSS.wav></audio> </br><audio controls src=/blog/NBSS_examples/2_spk2_p_NBSS.wav></audio></td></tr><tr>
+<td>4</td><td><audio controls src=/blog/NBSS_examples/3_mix.wav></audio></td><td><audio controls src=/blog/NBSS_examples/3_spk1_p_MVDR.wav></audio> </br><audio controls src=/blog/NBSS_examples/3_spk2_p_MVDR.wav></audio></td><td><audio controls src=/blog/NBSS_examples/3_spk1_p_TAC.wav></audio> </br><audio controls src=/blog/NBSS_examples/3_spk2_p_TAC.wav></audio></td><td><audio controls src=/blog/NBSS_examples/3_spk1_p_NBSS.wav></audio> </br><audio controls src=/blog/NBSS_examples/3_spk2_p_NBSS.wav></audio></td></tr><tr>
+<td>5</td><td><audio controls src=/blog/NBSS_examples/4_mix.wav></audio></td><td><audio controls src=/blog/NBSS_examples/4_spk1_p_MVDR.wav></audio> </br><audio controls src=/blog/NBSS_examples/4_spk2_p_MVDR.wav></audio></td><td><audio controls src=/blog/NBSS_examples/4_spk1_p_TAC.wav></audio> </br><audio controls src=/blog/NBSS_examples/4_spk2_p_TAC.wav></audio></td><td><audio controls src=/blog/NBSS_examples/4_spk1_p_NBSS.wav></audio> </br><audio controls src=/blog/NBSS_examples/4_spk2_p_NBSS.wav></audio></td></tr><tr>
+<td>6</td><td><audio controls src=/blog/NBSS_examples/5_mix.wav></audio></td><td><audio controls src=/blog/NBSS_examples/5_spk1_p_MVDR.wav></audio> </br><audio controls src=/blog/NBSS_examples/5_spk2_p_MVDR.wav></audio></td><td><audio controls src=/blog/NBSS_examples/5_spk1_p_TAC.wav></audio> </br><audio controls src=/blog/NBSS_examples/5_spk2_p_TAC.wav></audio></td><td><audio controls src=/blog/NBSS_examples/5_spk1_p_NBSS.wav></audio> </br><audio controls src=/blog/NBSS_examples/5_spk2_p_NBSS.wav></audio></td></tr></tbody></table><h2 id=源代码>源代码</h2><p>本方法已在github上开源，见 <strong><a href=https://github.com/quancs/NBSS>[<font color=DarkOrchid>code</font>]</a></strong> 和 <strong><a href=https://arxiv.org/pdf/2110.05966>[<font color=DarkOrchid>pdf</font>]</a></strong>. 如果你喜欢我们的工作且愿意引用，请使用：</p><pre tabindex=0><code>@article{quan_multi-channel_2021,
 	title = {Multi-channel {Narrow}-{Band} {Deep} {Speech} {Separation} with {Full}-band {Permutation} {Invariant} {Training}},
 	journal = {arXiv preprint arXiv:2110.05966},
 	author = {Quan, Changsheng and Li, Xiaofei},
 	year = {2021},
 }
-</code></pre><h2 id=参考文献>参考文献</h2>
-<p>[1] Jonathan Le Roux, Scott Wisdom, Hakan Erdogan, and John R. Hershey. SDR – Half-baked or Well Done? In ICASSP 2019.</p>
-<p>[2] <a href=https://github.com/Enny1991/beamformers>https://github.com/Enny1991/beamformers</a></p>
-<p>[3] Yi Luo, Zhuo Chen, Nima Mesgarani, and Takuya Yoshioka. End-to-end Microphone Permutation and Number Invariant Multi-channel Speech Separation. In ICASSP 2020.</p>
-</div>
-<footer>
+</code></pre><h2 id=参考文献>参考文献</h2><p>[1] Jonathan Le Roux, Scott Wisdom, Hakan Erdogan, and John R. Hershey. SDR – Half-baked or Well Done? In ICASSP 2019.</p><p>[2] <a href=https://github.com/Enny1991/beamformers>https://github.com/Enny1991/beamformers</a></p><p>[3] Yi Luo, Zhuo Chen, Nima Mesgarani, and Takuya Yoshioka. End-to-end Microphone Permutation and Number Invariant Multi-channel Speech Separation. In ICASSP 2020.</p></div><footer>
 <div class=stats>
-</div>
-</footer>
-</div>
-</article>
-<div class=pagination>
-</div>
-</main>
-<section id=site-sidebar>
+</div></footer></div></article><div class=pagination>
+</div></main><section id=site-sidebar>
 <section id=recent-posts>
 <header>
-<h1>最新文章</h1>
-</header>
-<article class=mini-post>
+<h1>最新文章</h1></header><article class=mini-post>
 <header>
-<h2><a href=/zh-cn/blog/nbss/>深度窄带语音分离</a></h2>
-<time class=published datetime="2021-12-04 00:00:00 +0000 UTC">December 4, 2021</time>
-</header>
-</article>
-</section>
-</section>
-<footer id=site-footer>
+<h2><a href=/zh-cn/blog/nbss/>深度窄带语音分离</a></h2><time class=published datetime="2021-12-04 00:00:00 +0000 UTC">December 4, 2021</time>
+</header></article></section></section><footer id=site-footer>
 <p class=copyright>
 © 2021 Changsheng Quan
 <br>
-主题: <a href=https://themes.gohugo.io/hugo-future-imperfect-slim/ target=_blank rel=noopener>Hugo Future Imperfect Slim</a><br>移植自 <a href=https://html5up.net/future-imperfect target=_blank rel=noopener>HTML5 UP</a> | 由 <a href=https://gohugo.io/ target=_blank rel=noopener title=0.90.0>Hugo</a> 驱动
-</p>
-</footer>
-<a id=back-to-top href=# class="fas fa-arrow-up fa-2x"></a>
+主题: <a href=https://themes.gohugo.io/hugo-future-imperfect-slim/ target=_blank rel=noopener>Hugo Future Imperfect Slim</a><br>移植自 <a href=https://html5up.net/future-imperfect target=_blank rel=noopener>HTML5 UP</a> | 由 <a href=https://gohugo.io/ target=_blank rel=noopener title=0.93.0>Hugo</a> 驱动
+</p></footer><a id=back-to-top href=# class="fas fa-arrow-up fa-2x"></a>
 <script src=/js/highlight.js></script>
-<script>hljs.highlightAll()</script><script src=/js/bundle.min.fe20538ce3dbce47ceabaf2b70a5988bbf632d80b81634a2e5c93a4834e2cd9e.js integrity="sha256-/iBTjOPbzkfOq68rcKWYi79jLYC4FjSi5ck6SDTizZ4="></script>
+<script>hljs.highlightAll()</script><script src=/js/bundle.min.48c41bc4c97614979bd6ed3c7e4458f42942e82c91891a017e4943ba78afc8c0.js integrity="sha256-SMQbxMl2FJeb1u08fkRY9ClC6CyRiRoBfklDunivyMA="></script>
 <script src=/js/add-on.js></script>
-</div>
-</body>
-</html>
+</div></body></html>

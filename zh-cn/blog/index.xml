@@ -9,4 +9,4 @@
 $$ fPIT(\boldsymbol{\rm \widehat{Y}}^{1},\ldots, \boldsymbol{\rm \widehat{Y}}^{N}, \boldsymbol{\rm {Y}}^{1},\ldots,\boldsymbol{\rm {Y}}^{N})=\mathop{min}_{p\in \mathcal{P}}\frac{1}{N}\sum_n \mathcal{L}(\boldsymbol{{\rm {Y}}}^n,\boldsymbol{{\rm \widehat{Y}}}^{p(n)}) $$
 其中，P是全部可能的频率组合组成的集合，p是其中一种可能的频率组合。 对于每对预测值和真值，负SI-SDR[1]被用来计算他们的损失。
 实验结果 在8通道2说话人情况下，和当前最佳分离算法的性能比较
-模型 SDR SI-SDR NB-PESQ WB-PESQ 分离前 0.18 0.00 2.05 1.6 基于真值的MVDR [2] 8.</description></item></channel></rss>
+模型 SDR SI-SDR NB-PESQ WB-PESQ 分离前 0.18 0.00 2.05 1.6 基于真值的MVDR [2] 12.</description></item></channel></rss>
