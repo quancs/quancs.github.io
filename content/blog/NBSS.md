@@ -64,7 +64,7 @@ Performance Comparision with SOTA Speech Separation Methods for 8-Channel 2-Spea
 Model | SDR | SI-SDR | NB-PESQ | WB-PESQ
 ------|------|------|------|------
 Mixture | 0.18 | 0.00 | 2.05 | 1.6 
-Oracle MVDR [2] | 8.15 | 4.58 | 3.20 | 2.62 
+Oracle MVDR [2] | 12.19 | 11.70 | 3.21 | 2.68  
 FaSNet-TAC [3] | 12.81 | 12.26 | 2.92 | 2.49 
 prop. | **13.89** | **13.26** | **3.31** | **2.87**
 
