@@ -69,6 +69,7 @@ FaSNet-TAC [3] | 12.81 | 12.26 | 2.92 | 2.49
 prop. | **13.89** | **13.26** | **3.31** | **2.87**
 
 ## Examples
+<small>Please open this page with Edge or Chrome, and not use Firefox. The audio playing is problematic in Firefox.</small>
 
 Id | Mix | Oracle MVDR [2] | FaSNet-TAC [3] | prop.
 ---------|-----|-------------|------------|------
@@ -103,7 +104,9 @@ NB-BLSTM [5] 	| 1.2 M		| 3.28 		| 2.81	 	| 12.8		| 0.37
 NBC [6]			| 2.0 M		| **4.00**	| **3.78**	| **20.3**	| 1.32
 
 
-Id | Mix | FaSNet-TAC [3] | SepFormer[4] | SepFormerMC | NB-BLSTM [5] | NBC [6]
+<small>Please open this page with Edge or Chrome, and not use Firefox. The audio playing is problematic in Firefox.</small>
+
+Id | <div style="width: 80pt">Mix</div> | <div style="width: 80pt">FaSNet-TAC[3]</div> | <div style="width: 80pt">SepFormer[4]</div> | <div style="width: 80pt">SepFormerMC</div> | <div style="width: 80pt">NB-BLSTM[5]</div> | <div style="width: 80pt">NBC[6]</div>
 ---------|-----|------------|------------|------------|------------|------------|
 1        | <audio controls src="/blog/NBSS_examples/1_mix.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_TAC.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_TAC.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_NBSS.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_NBSS.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_NBSS.wav" ></audio> | <audio controls src="/blog/NBSS_examples/1_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/1_spk2_p_NBSS.wav" ></audio>
 2        | <audio controls src="/blog/NBSS_examples/0_mix.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_TAC.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_TAC.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_NBSS.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_NBSS.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_NBSS.wav" ></audio> | <audio controls src="/blog/NBSS_examples/0_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/0_spk2_p_NBSS.wav" ></audio>
