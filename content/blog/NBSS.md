@@ -61,7 +61,8 @@ And the negative SI-SDR [1] is used as the loss function for each prediction-tar
 The narrow-band conformer (NBC) proposed in [6] is used to replace the BiLSTM network used in [5], as the narrow-band speech separation shares a similar principle with the self-attention mechanism and convolutions in Conformer. 
 The narrow-band conformer structure: 
 
-![image5](/blog/NBSS_examples/narrow-band_conformer.jpg)
+ <img src="/blog/NBSS_examples/narrow-band_conformer.jpg" height = "200" alt="narrow-band conformer" align=center />
+<!-- ![image5](/blog/NBSS_examples/narrow-band_conformer.jpg) -->
 
 ## Results 
 
@@ -79,7 +80,7 @@ NBC [6]			| 2.0 M		| **4.00**	| **3.78**	| **20.3**	| 1.32
 
 ## Examples
 
-New examples for paper [5] coming soon.
+New examples of Narrow-band Conformer is coming soon.
 
 Examples | Mix | Oracle MVDR [2] | FaSNet-TAC [3] | prop.
 ---------|-----|-------------|------------|------
@@ -94,7 +95,7 @@ Examples | Mix | Oracle MVDR [2] | FaSNet-TAC [3] | prop.
 ## Source Code
 This work is open sourced at github, see **[\[<font color=DarkOrchid>code</font>\]](https://github.com/quancs/NBSS)**, **[\[<font color=DarkOrchid>NBSS pdf</font>\]](https://arxiv.org/pdf/2110.05966)**, **[\[<font color=DarkOrchid>Narrow-band Conformer pdf</font>\]](https://arxiv.org/abs/2204.04464)**. If you like this work and are willing to cite us, please use:
 ```
-@inproceedings{quan_multi-channel_2021,
+@inproceedings{quan_multi-channel_2022,
 	title = {Multi-channel {Narrow}-band {Deep} {Speech} {Separation} with {Full}-band {Permutation} {Invariant} {Training}},
 	booktitle = {{ICASSP}},
 	author = {Quan, Changsheng and Li, Xiaofei},
@@ -120,8 +121,6 @@ and
 [3] Yi Luo, Zhuo Chen, Nima Mesgarani, and Takuya Yoshioka. End-to-end Microphone Permutation and Number Invariant Multi-channel Speech Separation. In ICASSP 2020.
 
 [4] C. Subakan, M. Ravanelli, S. Cornell, M. Bronzi, and J. Zhong. Attention Is All You Need In Speech Separation. In ICASSP 2021.
-
-Ours:
 
 [5] Changsheng Quan, Xiaofei Li. **Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training**. In ICASSP 2022.
 
