@@ -81,22 +81,72 @@ FaSNet-TAC [3] | 12.81 | 12.26 | 2.92 | 2.49
 5        | <audio controls src="/blog/NBSS_examples/4_mix.wav" ></audio> | <audio controls src="/blog/NBSS_examples/4_spk1_p_MVDR.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/4_spk2_p_MVDR.wav" ></audio> | <audio controls src="/blog/NBSS_examples/4_spk1_p_TAC.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/4_spk2_p_TAC.wav" ></audio> | <audio controls src="/blog/NBSS_examples/4_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/4_spk2_p_NBSS.wav" ></audio>
 6        | <audio controls src="/blog/NBSS_examples/5_mix.wav" ></audio> | <audio controls src="/blog/NBSS_examples/5_spk1_p_MVDR.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/5_spk2_p_MVDR.wav" ></audio> | <audio controls src="/blog/NBSS_examples/5_spk1_p_TAC.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/5_spk2_p_TAC.wav" ></audio> | <audio controls src="/blog/NBSS_examples/5_spk1_p_NBSS.wav" ></audio> </br> <audio controls src="/blog/NBSS_examples/5_spk2_p_NBSS.wav" ></audio>
 
+## 我们在窄带语音分离方向的新工作
+### Narrow-band Conformer
+我们最近提出的Narrow-band Conformer[6]被用来替换本论文使用的BiLSTM网络。
+因为窄带语音分离与Conformer中的自注意力机制（self-attention）、卷积操作具有相同的思想，因此Narrow-band Conformer相比BiLSTM更适合窄带上的语音分离。
+实验结果显示Narrow-band Conformer的性能相比BiLSTM具有巨大的飞跃。
+
+Narrow-band Conformer的网络结构: 
+
+<div align="center">
+ <img src="/blog/NBSS_examples/narrow-band_conformer.jpg" height = "300" alt="narrow-band conformer"/>
+</div>
+
+**Narrow-band Conformer论文中报告的结果 (8通道 2说话人)**
+
+Model			| #param	| NB-PESQ 	| WB-PESQ 	| SI-SDR	| RTF
+------			|------:	|------:	|------:	|------:	|------:
+Mixture 		| - 		| 2.05 		| 1.59 		| 0.0		| -
+Oracle MVDR [2] | - 		| 3.16	 	| 2.65 		| 11.0		| -
+FaSNet-TAC [3] 	| 2.8 M 	| 2.96 		| 2.53 		| 12.6		| 0.67
+SepFormer [4]	| 25.7 M	| 3.17		| 2.72		| 13.2		| 1.69
+SepFormerMC		| 25.7 M	| 3.42		| 3.01		| 14.9		| 1.70
+NB-BLSTM [5] 	| 1.2 M		| 3.28 		| 2.81	 	| 12.8		| 0.37
+NBC [6]			| 2.0 M		| **4.00**	| **3.78**	| **20.3**	| 1.32
+
+
+**Narrow-band Conformer论文涉及的算法的例子**  
+<small>请使用Edge或者Chrome打开本网页，不要使用Firefox。Firefox播放语音存在问题。鼠标左键点击链接播放语音，右键下载</small>
+
+Id 		 | Mix | Oracle MVDR [2] | FaSNet-TAC [3] | SepFormer[4] | SepFormerMC | NB-BLSTM [5] | NBC [6]
+---------|-----|-------------|------------|------------|------------|------------|------------|
+1        | <a onclick="play(this);return false;" href="/blog/NBC_examples/1_mix.wav">mix</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk1_p_MVDR.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk2_p_MVDR.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk1_p_FaSNet_TAC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk2_p_FaSNet_TAC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk1_p_SepFormer.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk2_p_SepFormer.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk1_p_SepFormerMC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk2_p_SepFormerMC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk1_p_NB-BLSTM.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk2_p_NB-BLSTM.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk1_p_NBC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/1_spk2_p_NBC.wav">spk2</a>
+2        | <a onclick="play(this);return false;" href="/blog/NBC_examples/0_mix.wav">mix</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk1_p_MVDR.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk2_p_MVDR.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk1_p_FaSNet_TAC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk2_p_FaSNet_TAC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk1_p_SepFormer.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk2_p_SepFormer.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk1_p_SepFormerMC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk2_p_SepFormerMC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk1_p_NB-BLSTM.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk2_p_NB-BLSTM.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk1_p_NBC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/0_spk2_p_NBC.wav">spk2</a>
+3        | <a onclick="play(this);return false;" href="/blog/NBC_examples/2_mix.wav">mix</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk1_p_MVDR.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk2_p_MVDR.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk1_p_FaSNet_TAC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk2_p_FaSNet_TAC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk1_p_SepFormer.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk2_p_SepFormer.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk1_p_SepFormerMC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk2_p_SepFormerMC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk1_p_NB-BLSTM.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk2_p_NB-BLSTM.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk1_p_NBC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/2_spk2_p_NBC.wav">spk2</a>
+4        | <a onclick="play(this);return false;" href="/blog/NBC_examples/3_mix.wav">mix</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk1_p_MVDR.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk2_p_MVDR.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk1_p_FaSNet_TAC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk2_p_FaSNet_TAC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk1_p_SepFormer.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk2_p_SepFormer.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk1_p_SepFormerMC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk2_p_SepFormerMC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk1_p_NB-BLSTM.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk2_p_NB-BLSTM.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk1_p_NBC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/3_spk2_p_NBC.wav">spk2</a>
+5        | <a onclick="play(this);return false;" href="/blog/NBC_examples/4_mix.wav">mix</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk1_p_MVDR.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk2_p_MVDR.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk1_p_FaSNet_TAC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk2_p_FaSNet_TAC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk1_p_SepFormer.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk2_p_SepFormer.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk1_p_SepFormerMC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk2_p_SepFormerMC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk1_p_NB-BLSTM.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk2_p_NB-BLSTM.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk1_p_NBC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/4_spk2_p_NBC.wav">spk2</a>
+6        | <a onclick="play(this);return false;" href="/blog/NBC_examples/5_mix.wav">mix</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk1_p_MVDR.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk2_p_MVDR.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk1_p_FaSNet_TAC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk2_p_FaSNet_TAC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk1_p_SepFormer.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk2_p_SepFormer.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk1_p_SepFormerMC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk2_p_SepFormerMC.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk1_p_NB-BLSTM.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk2_p_NB-BLSTM.wav">spk2</a> | <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk1_p_NBC.wav">spk1</a> </br> <a onclick="play(this);return false;" href="/blog/NBC_examples/5_spk2_p_NBC.wav">spk2</a>
+
+
 
 ## 源代码
-本方法已在github上开源，见 **[\[<font color=DarkOrchid>code</font>\]](https://github.com/quancs/NBSS)** 和 **[\[<font color=DarkOrchid>pdf</font>\]](https://arxiv.org/pdf/2110.05966)**. 如果你喜欢我们的工作且愿意引用，请使用：
+本方法已在github上开源，见 **[\[<font color=DarkOrchid>code</font>\]](https://github.com/quancs/NBSS)**, **[\[<font color=DarkOrchid>NBSS with fPIT pdf</font>\]](https://arxiv.org/pdf/2110.05966)** 和 **[\[<font color=DarkOrchid>Narrow-band Conformer pdf</font>\]](https://arxiv.org/abs/2204.04464)**. 如果你喜欢我们的工作且愿意引用，请使用：
 ```
-@article{quan_multi-channel_2021,
-	title = {Multi-channel {Narrow}-{Band} {Deep} {Speech} {Separation} with {Full}-band {Permutation} {Invariant} {Training}},
-	journal = {arXiv preprint arXiv:2110.05966},
+@inproceedings{quan_multi-channel_2022,
+	title = {Multi-channel {Narrow}-band {Deep} {Speech} {Separation} with {Full}-band {Permutation} {Invariant} {Training}},
+	booktitle = {{ICASSP}},
 	author = {Quan, Changsheng and Li, Xiaofei},
-	year = {2021},
+	year = {2022},
+}
+```
+以及
+```
+@article{quan_multichannel_2022,
+	title = {Multichannel {Speech} {Separation} with {Narrow}-band {Conformer}},
+	journal = {arXiv preprint arXiv:2204.04464},
+	author = {Quan, Changsheng and Li, Xiaofei},
+	year = {2022},
 }
 ```
 
 ## 参考文献
 
-[1] Jonathan Le Roux, Scott Wisdom, Hakan Erdogan, and John R. Hershey. SDR – Half-baked or Well Done? In ICASSP 2019.
-
-[2] https://github.com/Enny1991/beamformers
-
-[3] Yi Luo, Zhuo Chen, Nima Mesgarani, and Takuya Yoshioka. End-to-end Microphone Permutation and Number Invariant Multi-channel Speech Separation. In ICASSP 2020.
+<small>
+[1] Jonathan Le Roux, Scott Wisdom, Hakan Erdogan, and John R. Hershey. SDR – Half-baked or Well Done? In ICASSP 2019.  
+[2] https://github.com/Enny1991/beamformers  
+[3] Yi Luo, Zhuo Chen, Nima Mesgarani, and Takuya Yoshioka. End-to-end Microphone Permutation and Number Invariant Multi-channel Speech Separation. In ICASSP 2020.  
+[4] C. Subakan, M. Ravanelli, S. Cornell, M. Bronzi, and J. Zhong. Attention Is All You Need In Speech Separation. In ICASSP 2021.  
+[5] Changsheng Quan, Xiaofei Li. **Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training**. In ICASSP 2022.  
+[6] Changsheng Quan, Xiaofei Li. **Multichannel Speech Separation with Narrow-band Conformer**. arXiv preprint arXiv:2204.04464  
+</small>
