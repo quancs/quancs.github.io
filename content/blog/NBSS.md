@@ -61,7 +61,9 @@ And the negative SI-SDR [1] is used as the loss function for each prediction-tar
 The narrow-band conformer (NBC) proposed in [6] is used to replace the BiLSTM network used in [5], as the narrow-band speech separation shares a similar principle with the self-attention mechanism and convolutions in Conformer. 
 The narrow-band conformer structure: 
 
- <img src="/blog/NBSS_examples/narrow-band_conformer.jpg" height = "200" alt="narrow-band conformer" align=center />
+<div align="center">
+ <img src="/blog/NBSS_examples/narrow-band_conformer.jpg" height = "300" alt="narrow-band conformer"/>
+</div>
 <!-- ![image5](/blog/NBSS_examples/narrow-band_conformer.jpg) -->
 
 ## Results 
