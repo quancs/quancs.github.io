@@ -2,7 +2,7 @@
 title = "Narrow-band Deep Speech Separation"
 description = "Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training"
 author = "quancs"
-date = "2022-04-13"
+date = "2021-12-04"
 #tags = ["emoji"]
 #[[images]]
 #  src = "img/2019/03/pic02.jpg"
