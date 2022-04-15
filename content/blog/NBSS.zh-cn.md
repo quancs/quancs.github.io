@@ -13,6 +13,13 @@ date = "2021-12-04"
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<script>
+	function play(elmnt) {
+		const music = new Audio(elmnt.getAttribute("href"));
+		music.play();
+	}
+</script>
+
 ## 摘要
 本文基于深度学习技术解决了多通道多语音分离问题。
 我们提出了一种端到端窄带网络，以STFT域的一个频率的多通道混合信号作为输入，输出该频率的分离信号。
