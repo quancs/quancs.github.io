@@ -15,11 +15,10 @@ date = "2021-12-04"
 <script src="/js/play.js"></script>
 <link href="//at.alicdn.com/t/font_3342307_uim8flrhgpf.css" rel="stylesheet" />
 
-
-[1] Changsheng Quan, Xiaofei Li. **Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training**. In ICASSP 2022. **[\[<font color=DarkOrchid>Code</font>\]](https://github.com/Audio-WestlakeU/NBSS)**, **[\[<font color=DarkOrchid>Pdf</font>\]](https://arxiv.org/pdf/2110.05966)**, **[\[<font color=DarkOrchid>Results</font>\]](#results)**, **[\[<font color=DarkOrchid>Examples</font>\]](#examples)**
-
-
 ## Abstract
+
+[1] Changsheng Quan, Xiaofei Li. **Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training**. In ICASSP 2022. **[\[<font color=DarkOrchid>Code</font>\]](https://github.com/Audio-WestlakeU/NBSS)**, **[\[<font color=DarkOrchid>Pdf</font>\]](https://arxiv.org/pdf/2110.05966)**, **[\[<font color=DarkOrchid>Results</font>\]](#results)**, **[\[<font color=DarkOrchid>Examples</font>\]](#examples)**<br/><br/>
+
 This paper addresses the problem of multi-channel multi-speech separation based on deep learning techniques.
 In the short time Fourier transform domain, we propose an end-to-end narrow-band network that directly takes as input the multi-channel mixture signals of one frequency, and outputs the separated signals of this frequency.
 In narrow-band, the spatial information (or inter-channel difference) can well discriminate between speakers at different positions.
@@ -31,9 +30,10 @@ Experiments show that, by focusing on deeply learning the narrow-band informatio
 
 ---
 
-[2] Changsheng Quan, Xiaofei Li. **Multichannel Speech Separation with Narrow-band Conformer**. arXiv preprint arXiv:2204.04464. **[\[<font color=DarkOrchid>Code</font>\]](https://github.com/Audio-WestlakeU/NBSS)**, **[\[<font color=DarkOrchid>Pdf</font>\]](https://arxiv.org/abs/2204.04464)**, **[\[<font color=DarkOrchid>Results</font>\]](#results)**, **[\[<font color=DarkOrchid>Examples</font>\]](#examples)**
-
 ## Abstract
+
+[2] Changsheng Quan, Xiaofei Li. **Multichannel Speech Separation with Narrow-band Conformer**. arXiv preprint arXiv:2204.04464. **[\[<font color=DarkOrchid>Code</font>\]](https://github.com/Audio-WestlakeU/NBSS)**, **[\[<font color=DarkOrchid>Pdf</font>\]](https://arxiv.org/abs/2204.04464)**, **[\[<font color=DarkOrchid>Results</font>\]](#results)**, **[\[<font color=DarkOrchid>Examples</font>\]](#examples)**<br/><br/>
+
 This work proposes a multichannel speech separation method with narrow-band Conformer (named NBC).
 The network is trained to learn to automatically exploit narrow-band speech separation information, such as spatial vector clustering of multiple speakers.
 Specifically, in the short-time Fourier transform (STFT) domain, the network processes each frequency independently, and is shared by all frequencies.
@@ -151,8 +151,8 @@ and
 ## References
 
 <small>
-[1] Changsheng Quan, Xiaofei Li. **Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training**. In ICASSP 2022.<br>
-[2] Changsheng Quan, Xiaofei Li. **Multichannel Speech Separation with Narrow-band Conformer**. arXiv preprint arXiv:2204.04464 <br>
+[1] Changsheng Quan, Xiaofei Li. <strong>Multi-channel Narrow-band Deep Speech Separation with Full-band Permutation Invariant Training</strong>. In ICASSP 2022.<br>
+[2] Changsheng Quan, Xiaofei Li. <strong>Multichannel Speech Separation with Narrow-band Conformer</strong>. arXiv preprint arXiv:2204.04464 <br>
 [3] Jonathan Le Roux, Scott Wisdom, Hakan Erdogan, and John R. Hershey. SDR – Half-baked or Well Done? In ICASSP 2019.<br>
 [4] https://github.com/Enny1991/beamformers <br>
 [5] Yi Luo, Zhuo Chen, Nima Mesgarani, and Takuya Yoshioka. End-to-end Microphone Permutation and Number Invariant Multi-channel Speech Separation. In ICASSP 2020.<br>
